@@ -7,13 +7,23 @@ function getComputerChoice() {
     randomInt = getRandomIntInclusive(1, 3);
     switch (randomInt) {
         case 1:
-            return "Rock";
+            return "rock";
             break;
         case 2:
-            return "Paper";
+            return "paper";
             break;
         case 3:
-            return "Scissors";
+            return "scissors";
             break;
     }
 }
+function getHumanChoice() {
+    let humanChoice = prompt("Choose rock, paper, or scissors!");
+    if (humanChoice.toLowerCase() === "rock" || humanChoice.toLowerCase() === "scissors" || humanChoice.toLowerCase() === "paper") {
+        return humanChoice.toLowerCase();
+    }
+    else {
+        return "Invalid input";
+    }
+}
+console.log(getHumanChoice());
