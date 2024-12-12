@@ -1,3 +1,5 @@
+humanScore = 0;
+computerScore = 0;
 function getRandomIntInclusive(min, max) {
     const minCeiled = Math.ceil(min);
     const maxFloored = Math.floor(max);
@@ -26,4 +28,3 @@ function getHumanChoice() {
         return "Invalid input";
     }
 }
-console.log(getHumanChoice());
